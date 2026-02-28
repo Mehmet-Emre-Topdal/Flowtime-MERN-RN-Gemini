@@ -1,0 +1,24 @@
+export type TaskStatus = "todo" | "inprogress" | "done";
+
+export interface TaskDto {
+    id: string;
+    userId: string;
+    title: string;
+    description: string;
+    status: TaskStatus;
+    totalFocusedTime: number;
+    order: number;
+    isArchived: boolean;
+    isDaily: boolean;
+    lastResetDate: string;
+    createdAt: string;
+    updatedAt: string;
+    completedAt: string | null;
+}
+
+export interface TaskCreateInput {
+    title: string;
+    description: string;
+    status: TaskStatus;
+    isDaily?: boolean;
+}

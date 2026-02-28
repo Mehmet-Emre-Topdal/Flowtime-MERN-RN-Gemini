@@ -1,0 +1,1393 @@
+{
+    "numFailedTestSuites": 3,
+    "numFailedTests": 6,
+    "numPassedTestSuites": 5,
+    "numPassedTests": 65,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 8,
+    "numTotalTests": 71,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1772230197849,
+    "success": false,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "authMiddleware"
+                    ],
+                    "duration": 11,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "authMiddleware returns 401 when Authorization header is missing",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230202670,
+                    "status": "passed",
+                    "title": "returns 401 when Authorization header is missing"
+                },
+                {
+                    "ancestorTitles": [
+                        "authMiddleware"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "authMiddleware returns 401 when header does not start with \"Bearer \"",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202682,
+                    "status": "passed",
+                    "title": "returns 401 when header does not start with \"Bearer \""
+                },
+                {
+                    "ancestorTitles": [
+                        "authMiddleware"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "authMiddleware returns 401 when verifyIdToken throws",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230202683,
+                    "status": "passed",
+                    "title": "returns 401 when verifyIdToken throws"
+                },
+                {
+                    "ancestorTitles": [
+                        "authMiddleware"
+                    ],
+                    "duration": 2,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "authMiddleware sets req.userId and calls next() on valid token",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 4,
+                    "retryReasons": [],
+                    "startAt": 1772230202684,
+                    "status": "passed",
+                    "title": "sets req.userId and calls next() on valid token"
+                }
+            ],
+            "endTime": 1772230202687,
+            "message": "",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\middleware\\auth.test.ts",
+            "startTime": 1772230198576,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "calcDailyFlowWaves"
+                    ],
+                    "duration": 6,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcDailyFlowWaves returns hasEnoughData=false for fewer than 5 recent sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202867,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false for fewer than 5 recent sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcDailyFlowWaves"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcDailyFlowWaves returns hasEnoughData=true with at least 5 recent sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202874,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=true with at least 5 recent sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcDailyFlowWaves"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcDailyFlowWaves identifies peakHour correctly",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202875,
+                    "status": "passed",
+                    "title": "identifies peakHour correctly"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcDailyFlowWaves"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcDailyFlowWaves slots array has exactly 24 entries when data is sufficient",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 49,
+                    "retryReasons": [],
+                    "startAt": 1772230202876,
+                    "status": "passed",
+                    "title": "slots array has exactly 24 entries when data is sufficient"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWeeklyWorkTime"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWeeklyWorkTime returns 7 days",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202880,
+                    "status": "passed",
+                    "title": "returns 7 days"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWeeklyWorkTime"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWeeklyWorkTime calculates correct totalMinutes for today",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202881,
+                    "status": "passed",
+                    "title": "calculates correct totalMinutes for today"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWeeklyWorkTime"
+                    ],
+                    "duration": 0,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWeeklyWorkTime weekTotalMinutes is sum of all days",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202882,
+                    "status": "passed",
+                    "title": "weekTotalMinutes is sum of all days"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWeeklyWorkTime"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWeeklyWorkTime hasEnoughData is false when no sessions in week",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202882,
+                    "status": "passed",
+                    "title": "hasEnoughData is false when no sessions in week"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcFocusDensity"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcFocusDensity returns hasEnoughData=false with no sessions today",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202883,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false with no sessions today"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcFocusDensity"
+                    ],
+                    "duration": 3,
+                    "failing": false,
+                    "failureDetails": [
+                        {
+                            "matcherResult": {
+                                "actual": false,
+                                "expected": true,
+                                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                                "name": "toBe",
+                                "pass": false
+                            }
+                        }
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at Object.<anonymous> (D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\utils\\analyticsCalculations.test.ts:138:38)\n    at Promise.finally.completed (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1557:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1497:10)\n    at _callCircusTest (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1007:40)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at _runTest (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:947:3)\n    at D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:849:7\n    at _runTestsForDescribeBlock (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:862:11)\n    at _runTestsForDescribeBlock (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:857:11)\n    at run (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:761:3)\n    at runAndTransformResultsToJestFormat (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\jestAdapterInit.js:1918:21)\n    at jestAdapter (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-circus\\build\\runner.js:101:19)\n    at runTestInternal (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-runner\\build\\testWorker.js:275:16)\n    at runTest (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-runner\\build\\testWorker.js:343:7)\n    at Object.worker (D:\\dev\\flowtime\\flowtime_backend\\node_modules\\jest-runner\\build\\testWorker.js:497:12)"
+                    ],
+                    "fullName": "calcFocusDensity returns 100% for a single session today",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "startAt": 1772230202884,
+                    "status": "failed",
+                    "title": "returns 100% for a single session today"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcFocusDensity"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcFocusDensity returns \"sharp\" label when density >= 80%",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202907,
+                    "status": "passed",
+                    "title": "returns \"sharp\" label when density >= 80%"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcResistancePoint"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcResistancePoint returns hasEnoughData=false for fewer than 10 sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202908,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false for fewer than 10 sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcResistancePoint"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcResistancePoint returns a resistanceMinute for 10+ sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202909,
+                    "status": "passed",
+                    "title": "returns a resistanceMinute for 10+ sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcResistancePoint"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcResistancePoint last7DaysSessions contains only sessions from last 7 days",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 13,
+                    "retryReasons": [],
+                    "startAt": 1772230202910,
+                    "status": "passed",
+                    "title": "last7DaysSessions contains only sessions from last 7 days"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcNaturalFlowWindow"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcNaturalFlowWindow returns hasEnoughData=false for fewer than 20 sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202911,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false for fewer than 20 sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcNaturalFlowWindow"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcNaturalFlowWindow returns buckets and dominant window for 20+ sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230202912,
+                    "status": "passed",
+                    "title": "returns buckets and dominant window for 20+ sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcNaturalFlowWindow"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcNaturalFlowWindow at least one bucket is marked isDominant",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202913,
+                    "status": "passed",
+                    "title": "at least one bucket is marked isDominant"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcFlowStreak"
+                    ],
+                    "duration": 0,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcFlowStreak returns hasEnoughData=false for fewer than 3 sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202914,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false for fewer than 3 sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcFlowStreak"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcFlowStreak returns 30 entries in last30Days",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202914,
+                    "status": "passed",
+                    "title": "returns 30 entries in last30Days"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcFlowStreak"
+                    ],
+                    "duration": 0,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcFlowStreak currentStreak is 0 when no sessions today/yesterday",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202915,
+                    "status": "passed",
+                    "title": "currentStreak is 0 when no sessions today/yesterday"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcTaskFlowHarmony"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcTaskFlowHarmony returns hasEnoughData=false for fewer than 10 tagged sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202915,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false for fewer than 10 tagged sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcTaskFlowHarmony"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcTaskFlowHarmony returns top 10 items for sufficient tagged sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 4,
+                    "retryReasons": [],
+                    "startAt": 1772230202916,
+                    "status": "passed",
+                    "title": "returns top 10 items for sufficient tagged sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcTaskFlowHarmony"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcTaskFlowHarmony untagged sessions are excluded",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202917,
+                    "status": "passed",
+                    "title": "untagged sessions are excluded"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWarmupPhase"
+                    ],
+                    "duration": 0,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWarmupPhase returns hasEnoughData=false for fewer than 30 successful sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202918,
+                    "status": "passed",
+                    "title": "returns hasEnoughData=false for fewer than 30 successful sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWarmupPhase"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWarmupPhase returns avgWarmupMinutes > 0 for 30+ successful sessions with low variance",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202918,
+                    "status": "passed",
+                    "title": "returns avgWarmupMinutes > 0 for 30+ successful sessions with low variance"
+                },
+                {
+                    "ancestorTitles": [
+                        "calcWarmupPhase"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "calcWarmupPhase sessions under 20 minutes are excluded",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230202919,
+                    "status": "passed",
+                    "title": "sessions under 20 minutes are excluded"
+                }
+            ],
+            "endTime": 1772230202944,
+            "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mcalcFocusDensity › returns 100% for a single session today\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32mtrue\u001b[39m\n    Received: \u001b[31mfalse\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 136 |\u001b[39m         \u001b[36mconst\u001b[39m now \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mDate\u001b[39m()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 137 |\u001b[39m         \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m calcFocusDensity([makeSession({ startedAt\u001b[33m:\u001b[39m now\u001b[33m.\u001b[39mtoISOString() })])\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 138 |\u001b[39m         expect(result\u001b[33m.\u001b[39mhasEnoughData)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 139 |\u001b[39m         expect(result\u001b[33m.\u001b[39mpercentage)\u001b[33m.\u001b[39mtoBe(\u001b[35m100\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 140 |\u001b[39m         expect(result\u001b[33m.\u001b[39mlabel)\u001b[33m.\u001b[39mtoBe(\u001b[32m'sharp'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 141 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/__tests__/utils/analyticsCalculations.test.ts\u001b[39m\u001b[0m\u001b[2m:138:38)\u001b[22m\u001b[2m\u001b[22m\n",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\utils\\analyticsCalculations.test.ts",
+            "startTime": 1772230198597,
+            "status": "failed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "rateLimit"
+                    ],
+                    "duration": 9,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "rateLimit allows a new user (full remaining)",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202960,
+                    "status": "passed",
+                    "title": "allows a new user (full remaining)"
+                },
+                {
+                    "ancestorTitles": [
+                        "rateLimit"
+                    ],
+                    "duration": 1,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "rateLimit decrements remaining after incrementUsage",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202970,
+                    "status": "passed",
+                    "title": "decrements remaining after incrementUsage"
+                },
+                {
+                    "ancestorTitles": [
+                        "rateLimit"
+                    ],
+                    "duration": 2,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "rateLimit blocks after 20 usages",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202971,
+                    "status": "passed",
+                    "title": "blocks after 20 usages"
+                },
+                {
+                    "ancestorTitles": [
+                        "rateLimit"
+                    ],
+                    "duration": 2,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "rateLimit resets when date changes",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230202973,
+                    "status": "passed",
+                    "title": "resets when date changes"
+                },
+                {
+                    "ancestorTitles": [
+                        "rateLimit"
+                    ],
+                    "duration": 2,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "rateLimit independent users do not share counts",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230202975,
+                    "status": "passed",
+                    "title": "independent users do not share counts"
+                }
+            ],
+            "endTime": 1772230202978,
+            "message": "",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\middleware\\rateLimit.test.ts",
+            "startTime": 1772230198623,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "GET /api/analytics"
+                    ],
+                    "duration": 26,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/analytics returns analytics result with correct shape",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 10,
+                    "retryReasons": [],
+                    "startAt": 1772230203019,
+                    "status": "passed",
+                    "title": "returns analytics result with correct shape"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/analytics"
+                    ],
+                    "duration": 9,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/analytics summary.totalSessions equals number of sessions returned",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203045,
+                    "status": "passed",
+                    "title": "summary.totalSessions equals number of sessions returned"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/analytics"
+                    ],
+                    "duration": 15,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/analytics returns 500 on Firestore error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203054,
+                    "status": "passed",
+                    "title": "returns 500 on Firestore error"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/analytics"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/analytics accepts weekOffset query param without error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203069,
+                    "status": "passed",
+                    "title": "accepts weekOffset query param without error"
+                }
+            ],
+            "endTime": 1772230203076,
+            "message": "",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\analytics.test.ts",
+            "startTime": 1772230198579,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "GET /api/chat-history"
+                    ],
+                    "duration": 28,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/chat-history returns messages and summary when document exists",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203043,
+                    "status": "passed",
+                    "title": "returns messages and summary when document exists"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/chat-history"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/chat-history returns empty messages and null summary when document does not exist",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203071,
+                    "status": "passed",
+                    "title": "returns empty messages and null summary when document does not exist"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/chat-history"
+                    ],
+                    "duration": 24,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/chat-history returns 500 on Firestore error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203076,
+                    "status": "passed",
+                    "title": "returns 500 on Firestore error"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/chat-history"
+                    ],
+                    "duration": 17,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "PUT /api/chat-history saves chat history and returns 200",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203100,
+                    "status": "passed",
+                    "title": "saves chat history and returns 200"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/chat-history"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "PUT /api/chat-history saves with null summary",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230203117,
+                    "status": "passed",
+                    "title": "saves with null summary"
+                },
+                {
+                    "ancestorTitles": [
+                        "DELETE /api/chat-history"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "DELETE /api/chat-history deletes document and returns 200",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203121,
+                    "status": "passed",
+                    "title": "deletes document and returns 200"
+                },
+                {
+                    "ancestorTitles": [
+                        "DELETE /api/chat-history"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "DELETE /api/chat-history returns 500 on Firestore error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203126,
+                    "status": "passed",
+                    "title": "returns 500 on Firestore error"
+                }
+            ],
+            "endTime": 1772230203131,
+            "message": "",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\chatHistory.test.ts",
+            "startTime": 1772230198545,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "GET /api/sessions"
+                    ],
+                    "duration": 28,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/sessions returns sessions list",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 4,
+                    "retryReasons": [],
+                    "startAt": 1772230203102,
+                    "status": "passed",
+                    "title": "returns sessions list"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/sessions"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/sessions returns empty array when no sessions",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230203130,
+                    "status": "passed",
+                    "title": "returns empty array when no sessions"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/sessions"
+                    ],
+                    "duration": 15,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/sessions returns 500 on Firestore error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203136,
+                    "status": "passed",
+                    "title": "returns 500 on Firestore error"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/sessions"
+                    ],
+                    "duration": 13,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/sessions creates a session and returns 201",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230203151,
+                    "status": "passed",
+                    "title": "creates a session and returns 201"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/sessions"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/sessions returns 400 when startedAt is missing",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203164,
+                    "status": "passed",
+                    "title": "returns 400 when startedAt is missing"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/sessions"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/sessions returns 400 when endedAt is missing",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203169,
+                    "status": "passed",
+                    "title": "returns 400 when endedAt is missing"
+                }
+            ],
+            "endTime": 1772230203174,
+            "message": "",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\sessions.test.ts",
+            "startTime": 1772230198550,
+            "status": "passed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "GET /api/user-configs"
+                    ],
+                    "duration": 22,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/user-configs returns config when document exists",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230203184,
+                    "status": "passed",
+                    "title": "returns config when document exists"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/user-configs"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/user-configs returns { config: null } when document does not exist",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230203206,
+                    "status": "passed",
+                    "title": "returns { config: null } when document does not exist"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/user-configs"
+                    ],
+                    "duration": 14,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/user-configs returns 500 on Firestore error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203211,
+                    "status": "passed",
+                    "title": "returns 500 on Firestore error"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/user-configs"
+                    ],
+                    "duration": 13,
+                    "failing": false,
+                    "failureDetails": [
+                        {
+                            "matcherResult": {
+                                "actual": 400,
+                                "expected": 200,
+                                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                                "name": "toBe",
+                                "pass": false
+                            }
+                        }
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at Object.<anonymous> (D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\userConfigs.test.ts:77:28)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+                    ],
+                    "fullName": "PUT /api/user-configs saves config and returns 200",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "startAt": 1772230203226,
+                    "status": "failed",
+                    "title": "saves config and returns 200"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/user-configs"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "PUT /api/user-configs returns 400 when intervals is empty",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203239,
+                    "status": "passed",
+                    "title": "returns 400 when intervals is empty"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/user-configs"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "PUT /api/user-configs returns 400 when intervals is missing",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203243,
+                    "status": "passed",
+                    "title": "returns 400 when intervals is missing"
+                }
+            ],
+            "endTime": 1772230203259,
+            "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mPUT /api/user-configs › saves config and returns 200\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m200\u001b[39m\n    Received: \u001b[31m400\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 75 |\u001b[39m             \u001b[33m.\u001b[39msend(mockConfig)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 76 |\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 77 |\u001b[39m         expect(res\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 78 |\u001b[39m         expect(res\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39msuccess)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 79 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 80 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/__tests__/routes/userConfigs.test.ts\u001b[39m\u001b[0m\u001b[2m:77:28)\u001b[22m\u001b[2m\u001b[22m\n",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\userConfigs.test.ts",
+            "startTime": 1772230198567,
+            "status": "failed",
+            "summary": ""
+        },
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "GET /api/tasks"
+                    ],
+                    "duration": 22,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/tasks returns tasks list",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203224,
+                    "status": "passed",
+                    "title": "returns tasks list"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/tasks"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/tasks filters out archived tasks",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203246,
+                    "status": "passed",
+                    "title": "filters out archived tasks"
+                },
+                {
+                    "ancestorTitles": [
+                        "GET /api/tasks"
+                    ],
+                    "duration": 17,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "GET /api/tasks returns 500 on Firestore error",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203250,
+                    "status": "passed",
+                    "title": "returns 500 on Firestore error"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/tasks"
+                    ],
+                    "duration": 12,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/tasks creates a task and returns 201",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 2,
+                    "retryReasons": [],
+                    "startAt": 1772230203267,
+                    "status": "passed",
+                    "title": "creates a task and returns 201"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/tasks"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/tasks returns 400 when title is missing",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203279,
+                    "status": "passed",
+                    "title": "returns 400 when title is missing"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/tasks/:id"
+                    ],
+                    "duration": 11,
+                    "failing": false,
+                    "failureDetails": [
+                        {
+                            "matcherResult": {
+                                "actual": 500,
+                                "expected": 200,
+                                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                                "name": "toBe",
+                                "pass": false
+                            }
+                        }
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at Object.<anonymous> (D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\tasks.test.ts:139:28)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+                    ],
+                    "fullName": "PUT /api/tasks/:id updates a task and returns 200",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "startAt": 1772230203283,
+                    "status": "failed",
+                    "title": "updates a task and returns 200"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/tasks/:id"
+                    ],
+                    "duration": 5,
+                    "failing": false,
+                    "failureDetails": [
+                        {
+                            "matcherResult": {
+                                "actual": 500,
+                                "expected": 404,
+                                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                                "name": "toBe",
+                                "pass": false
+                            }
+                        }
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at Object.<anonymous> (D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\tasks.test.ts:152:28)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+                    ],
+                    "fullName": "PUT /api/tasks/:id returns 404 when task does not exist",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "startAt": 1772230203294,
+                    "status": "failed",
+                    "title": "returns 404 when task does not exist"
+                },
+                {
+                    "ancestorTitles": [
+                        "PUT /api/tasks/:id"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [
+                        {
+                            "matcherResult": {
+                                "actual": 500,
+                                "expected": 404,
+                                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
+                                "name": "toBe",
+                                "pass": false
+                            }
+                        }
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m404\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at Object.<anonymous> (D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\tasks.test.ts:164:28)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+                    ],
+                    "fullName": "PUT /api/tasks/:id returns 404 when userId does not match",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "startAt": 1772230203299,
+                    "status": "failed",
+                    "title": "returns 404 when userId does not match"
+                },
+                {
+                    "ancestorTitles": [
+                        "DELETE /api/tasks/:id"
+                    ],
+                    "duration": 4,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "DELETE /api/tasks/:id deletes task and returns 200",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203303,
+                    "status": "passed",
+                    "title": "deletes task and returns 200"
+                },
+                {
+                    "ancestorTitles": [
+                        "DELETE /api/tasks/:id"
+                    ],
+                    "duration": 3,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "DELETE /api/tasks/:id returns 404 for non-existent task",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203307,
+                    "status": "passed",
+                    "title": "returns 404 for non-existent task"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/tasks/:id/archive"
+                    ],
+                    "duration": 3,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/tasks/:id/archive archives a task and returns 200",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203310,
+                    "status": "passed",
+                    "title": "archives a task and returns 200"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/tasks/reset-daily"
+                    ],
+                    "duration": 3,
+                    "failing": false,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "POST /api/tasks/reset-daily resets daily tasks that have not been reset today",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 3,
+                    "retryReasons": [],
+                    "startAt": 1772230203313,
+                    "status": "passed",
+                    "title": "resets daily tasks that have not been reset today"
+                },
+                {
+                    "ancestorTitles": [
+                        "POST /api/tasks/reset-daily"
+                    ],
+                    "duration": 2,
+                    "failing": false,
+                    "failureDetails": [
+                        {
+                            "matcherResult": {
+                                "actual": 1,
+                                "expected": 0,
+                                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+                                "name": "toBe",
+                                "pass": false
+                            }
+                        }
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at Object.<anonymous> (D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\tasks.test.ts:253:37)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+                    ],
+                    "fullName": "POST /api/tasks/reset-daily skips tasks already reset today",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 1,
+                    "retryReasons": [],
+                    "startAt": 1772230203316,
+                    "status": "failed",
+                    "title": "skips tasks already reset today"
+                }
+            ],
+            "endTime": 1772230203340,
+            "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mPUT /api/tasks/:id › updates a task and returns 200\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m200\u001b[39m\n    Received: \u001b[31m500\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 137 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 138 |\u001b[39m         \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39mput(\u001b[32m'/api/tasks/task-1'\u001b[39m)\u001b[33m.\u001b[39msend({ title\u001b[33m:\u001b[39m \u001b[32m'Updated'\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 139 |\u001b[39m         expect(res\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 140 |\u001b[39m         expect(res\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39msuccess)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 141 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 142 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/__tests__/routes/tasks.test.ts\u001b[39m\u001b[0m\u001b[2m:139:28)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mPUT /api/tasks/:id › returns 404 when task does not exist\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m404\u001b[39m\n    Received: \u001b[31m500\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 150 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 151 |\u001b[39m         \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39mput(\u001b[32m'/api/tasks/not-found'\u001b[39m)\u001b[33m.\u001b[39msend({ title\u001b[33m:\u001b[39m \u001b[32m'X'\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 152 |\u001b[39m         expect(res\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 153 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 154 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 155 |\u001b[39m     it(\u001b[32m'returns 404 when userId does not match'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/__tests__/routes/tasks.test.ts\u001b[39m\u001b[0m\u001b[2m:152:28)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mPUT /api/tasks/:id › returns 404 when userId does not match\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m404\u001b[39m\n    Received: \u001b[31m500\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 162 |\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 163 |\u001b[39m         \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39mput(\u001b[32m'/api/tasks/task-1'\u001b[39m)\u001b[33m.\u001b[39msend({ title\u001b[33m:\u001b[39m \u001b[32m'X'\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 164 |\u001b[39m         expect(res\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m404\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 165 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 166 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 167 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/__tests__/routes/tasks.test.ts\u001b[39m\u001b[0m\u001b[2m:164:28)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mPOST /api/tasks/reset-daily › skips tasks already reset today\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m0\u001b[39m\n    Received: \u001b[31m1\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 251 |\u001b[39m         \u001b[36mconst\u001b[39m res \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request(app)\u001b[33m.\u001b[39mpost(\u001b[32m'/api/tasks/reset-daily'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 252 |\u001b[39m         expect(res\u001b[33m.\u001b[39mstatus)\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 253 |\u001b[39m         expect(res\u001b[33m.\u001b[39mbody\u001b[33m.\u001b[39mresetCount)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 254 |\u001b[39m         expect(mockBatch\u001b[33m.\u001b[39mcommit)\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoHaveBeenCalled()\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 255 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 256 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36msrc/__tests__/routes/tasks.test.ts\u001b[39m\u001b[0m\u001b[2m:253:37)\u001b[22m\u001b[2m\u001b[22m\n",
+            "name": "D:\\dev\\flowtime\\flowtime_backend\\src\\__tests__\\routes\\tasks.test.ts",
+            "startTime": 1772230198602,
+            "status": "failed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}
