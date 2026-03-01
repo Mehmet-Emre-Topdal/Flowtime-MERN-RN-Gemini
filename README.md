@@ -1,6 +1,5 @@
 # Flowtime: Ultimate Productivity & Flow State Ecosystem
 
-![Flowtime Banner](https://via.placeholder.com/1200x400?text=Flowtime+Productivity+Ecosystem) *(Optional: You can add a nice cover photo describing your project here)*
 
 **Flowtime** is a modern productivity and task management ecosystem that breaks away from the strict rules of the classic Pomodoro technique and instead relies on the user's natural focus duration ("Flow State").
 
