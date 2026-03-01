@@ -17,7 +17,7 @@ interface RtkError {
 }
 
 const AssistantChat: React.FC = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const { user } = useAppSelector(state => state.auth);
 
     const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +63,7 @@ const AssistantChat: React.FC = () => {
             const data = await triggerSend({
                 conversationHistory: messages,
                 conversationSummary,
+                language: i18n.language,
                 ...(message ? { message } : {}),
             }).unwrap();
 

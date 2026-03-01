@@ -87,6 +87,7 @@ export const chatAssistantSchema = z.object({
             })
         ).optional().default([]),
         conversationSummary: z.string().nullable().optional(),
+        language: z.enum(['tr', 'en']).optional().default('tr'),
     }).refine((data) => {
         // Eğer message boş ise bu bir başlangıç (welcome) çağrısıdır,
         // Ancak message verilmemiş ama geçmişte veri yollanmışsa bu anlamsızdır.

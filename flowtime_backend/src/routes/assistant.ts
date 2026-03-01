@@ -16,8 +16,13 @@ const router = Router();
 
 // ─── Welcome Message Handler ────────────────────────────────
 
-async function handleWelcome(): Promise<ChatResponse> {
-    const welcomeMessage = `Merhaba! 👋 Ben Flowtime yapay zeka asistanıyım. Beni odaklanma verilerini analiz etmek, verimliliğini artırmak ve akış halini derinleştirmek için kullanabilirsin. Ne merak ediyorsun?`;
+const WELCOME_MESSAGES: Record<string, string> = {
+    tr: `Merhaba! 👋 Ben Flowtime yapay zeka asistanıyım. Beni odaklanma verilerini analiz etmek, verimliliğini artırmak ve akış halini derinleştirmek için kullanabilirsin. Ne merak ediyorsun?`,
+    en: `Hello! 👋 I'm Flowtime's AI assistant. You can use me to analyze your focus data, boost your productivity, and deepen your flow state. What would you like to know?`,
+};
+
+async function handleWelcome(language: string = 'tr'): Promise<ChatResponse> {
+    const welcomeMessage = WELCOME_MESSAGES[language] ?? WELCOME_MESSAGES['en'];
 
     return {
         reply: welcomeMessage,
@@ -35,13 +40,13 @@ async function handleWelcome(): Promise<ChatResponse> {
 router.post('/chat', authMiddleware, validateRequest(chatAssistantSchema), asyncHandler(async (req: Request, res: Response) => {
     const userId = req.userId;
 
-    const { message, conversationHistory = [], conversationSummary = null } = req.body as z.infer<typeof chatAssistantSchema>['body'];
+    const { message, conversationHistory = [], conversationSummary = null, language = 'tr' } = req.body as z.infer<typeof chatAssistantSchema>['body'];
     console.log('[Chat API] Message:', message ? message.substring(0, 100) : 'NONE (welcome)');
     console.log('[Chat API] History length:', conversationHistory.length);
 
     // Welcome: ilk açılışta mesaj ve geçmiş yoktur
     if (!message && conversationHistory.length === 0) {
-        const welcomeResponse = await handleWelcome();
+        const welcomeResponse = await handleWelcome(language);
         res.status(200).json(welcomeResponse);
         return;
     }
@@ -58,7 +63,7 @@ router.post('/chat', authMiddleware, validateRequest(chatAssistantSchema), async
         return;
     }
 
-    const systemPrompt = buildSystemPrompt(conversationSummary);
+    const systemPrompt = buildSystemPrompt(conversationSummary, language);
 
     const historyForLLM = conversationHistory.map((msg) => ({
         role: msg.role,

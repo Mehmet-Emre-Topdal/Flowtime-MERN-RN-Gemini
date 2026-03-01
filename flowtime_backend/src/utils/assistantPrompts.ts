@@ -10,8 +10,12 @@ Dakika, oturum sayısı, streak gibi sayısal verileri mutlaka koru.
 Sadece özeti yaz, başka hiçbir şey ekleme.`;
 
 /** Bugünün tarihine ve önceki konuşma özetine göre sistem promptunu oluşturur. */
-export function buildSystemPrompt(summary: string | null): string {
+export function buildSystemPrompt(summary: string | null, language: string = 'tr'): string {
     const today = new Date().toISOString().split('T')[0];
+
+    const languageInstruction = language === 'en'
+        ? 'Write in English by default. If the user writes in a different language, switch to that language.'
+        : 'Türkçe yaz. Kullanıcı farklı bir dilde yazarsa o dile geç.';
 
     let prompt = `Sen Flowtime uygulamasının yapay zeka odaklanma asistanısın.
 Kullanıcının odaklanma ve akış verilerine araçlar aracılığıyla erişebilirsin.
@@ -26,7 +30,7 @@ Kişiliğin:
 - Kısa ve net, gereksiz giriş cümleleri yok
 - Asla "Yapay zekayım" veya "Verilerine göre" gibi meta cümleler kullanma
 - Kullanıcı Flowtime dışı bir şey sorarsa nazikçe odaklanma konusuna yönlendir
-- Türkçe yaz
+- ${languageInstruction}
 
 Bugünün tarihi: ${today}
 

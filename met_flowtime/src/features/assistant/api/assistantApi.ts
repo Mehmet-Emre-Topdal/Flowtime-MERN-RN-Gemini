@@ -10,6 +10,7 @@ interface SendMessageArgs {
     conversationHistory: ChatMessage[];
     conversationSummary: string | null;
     message?: string;
+    language?: string;
 }
 
 export const assistantApi = baseApi.injectEndpoints({
